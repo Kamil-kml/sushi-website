@@ -4,6 +4,10 @@ body {
     background: #f7eee5;
 }
 
+.nav-container {
+    margin-top: -2.3em;
+}
+
 .navbar {
     display: flex;
     flex-wrap: wrap;
@@ -56,12 +60,26 @@ body {
 }
 
 .logo {
-    width: 120px;
+    width: 150px;
     /*position: absolute;
     z-index: 1;
     top: 15%;
     left: 30%;
     transform: translate(120%, -15%);*/
+}
+
+.background-elements {
+    display: flex;
+    justify-content: center;
+}
+
+.background-elements img {
+    width: 800px;
+    margin-top: 8em;
+}
+
+.temp {
+    margin-top: -16em;
 }
 
 /* Media queries for smaller screens */
