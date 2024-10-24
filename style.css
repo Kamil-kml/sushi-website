@@ -6,6 +6,7 @@ body {
 
 .navbar {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     background: #f7eee5;
     border-bottom: 2px solid #f0fff0cb;
@@ -39,7 +40,8 @@ body {
     align-items: center;
     position: relative;
     margin: 1.4em auto;
-    line-height: 2.3em;    
+    line-height: 2.3em;
+    gap: 2em;
 }
 
 .nav-logo span{
@@ -54,10 +56,26 @@ body {
 }
 
 .logo {
-    width: 100px;
-    position: absolute;
+    width: 120px;
+    /*position: absolute;
     z-index: 1;
     top: 15%;
     left: 30%;
-    transform: translate(-15%, -15%);
+    transform: translate(120%, -15%);*/
+}
+
+/* Media queries for smaller screens */
+@media (max-width: 768px) {
+    .nav-logo {
+        flex-direction: column; /* Stack logo and text vertically */
+        gap: 0.5rem;
+    }
+
+    .nav-logo img.logo {
+        width: 80px; /* Resize logo for smaller screens */
+    }
+
+    .nav-logo span {
+        font-size: 2rem; /* Adjust font size for smaller screens */
+    }
 }
