@@ -64,3 +64,9 @@
     transform: translateY(-43px) rotate(0);
     opacity: 1;    
 }
+
+@media (max-width: 768px) {
+    .social-media-container {
+        margin-top: 3em;
+    }
+}

@@ -72,8 +72,8 @@ body {
 
 .background-elements, .menu-elements {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .background-elements h2 {
@@ -92,12 +92,16 @@ body {
 }
 
 .menu-elements {
-    margin: 6em 15em;
-    width: 800px;
+    margin: 6em 5em;
+    width: 400px;
+    padding: 2em;
+    align-content: center;
+    justify-self: center;
+    gap: 3.3em;
 }
 
 .menu-elements img {
-    width: 200px;
+    width: 150px;
 }
 
 .temp {
@@ -117,5 +121,19 @@ body {
 
     .nav-logo span {
         font-size: 2rem; /* Adjust font size for smaller screens */
+    }
+
+    .background-elements h2 {
+        font-size: 1.3rem;
+        text-align: center;
+    }
+
+    .menu-elements {
+        margin: 1em;
+    }
+
+    .background-elements img {
+        max-width: 90%;
+        margin: 1em;
     }
 }
