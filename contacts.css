@@ -1,72 +1,109 @@
-.social-media-container {
-   display: flex;
-   justify-content: center;
-   margin-top: 6em;
-   gap: 20px;
-}
-
-.social-media-container a svg{
-    height: 40px;
-}
-
-.social-media-container a {
-    width: 48px; /* Fixed width */
-    height: 48px; /* Fixed height */
-    background-color: whitesmoke;
-    padding: 0.75em; /* Remove padding to maintain the circular shape */
-    border-radius: 50%; /* Make it circular */
-    display: grid; /* Allows centering content */
-    place-items: center;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
-}
-
-.social-media-container a::before {
-    content: attr(data-social);
-    position: absolute;
-    background-color: var(--accent-color);
-    color: white;
-    text-decoration: none;
-    padding: 0.5em 1em;
-    border-radius: 100px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
-    transform: translateY(-34px) rotate(25deg);
-    opacity: 0;
-    transition: 200ms cubic-bezier(.25,.1,.37,1.72);
-}
-
-.social-media-container a:hover {
-    background-color: var(--accent-color);
-    fill: whitesmoke;
-}
-
-.social-media-container a::after {
-    content: '';
-    position: absolute;
-    height: 0;
-    width: 0;
-    border-left: 8px solid transparent;
-    border-right: 8px solid transparent;
-    border-top: 10px solid var(--accent-color);
-    transform: translateY(0) rotate(25deg);
-    opacity: 0;
-    transition: 200ms cubic-bezier(.25,.1,.37,1.72);
-}
-.social-media-container a:hover::before {
-    transform: translateY(-65px) rotate(0);
-    opacity: 1;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 1.2rem;
+.phone-text {
+    font-size: 2rem;
+    color: #333;
+    text-shadow: 2px 2px 3px #cdffcdcb,
+            3px 3px 6px #cdffcdcb,
+        3px 3px 3px #333;
+    font-family: 'Nunito';
     font-weight: bold;
-    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
 }
 
-.social-media-container a:hover::after {
-    transform: translateY(-43px) rotate(0);
-    opacity: 1;    
+.phone-icon {
+    margin-right: .2em;
+    font-size: 38px;
+    color: rgb(0, 89, 49);
+    text-shadow: 1px 1px 1px rgb(79, 202, 255),
+                    4px 3px 4px black
+    ;
 }
 
-@media (max-width: 768px) {
-    .social-media-container {
-        margin-top: 3em;
-    }
+.phone-link:hover .phone-icon {
+    font-size: 40px; /* Change icon size on hover */
+    color: rgb(0, 255, 170);
 }
+
+.phone-text:hover {
+    color: rgb(0, 255, 170);
+    text-shadow: 3px 3px 3px #333;;
+}
+
+.phone-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2em;
+}
+
+.phone-container a {
+    text-decoration: none;
+}
+
+.social-media-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    font-size: 1.2rem;
+    margin-top: 2em;
+ }
+ 
+ .social-media-container a svg{
+     height: 40px;
+ }
+ 
+ .social-media-container a {
+     width: 48px; /* Fixed width */
+     height: 48px; /* Fixed height */
+     background-color: whitesmoke;
+     padding: 0.75em; /* Remove padding to maintain the circular shape */
+     border-radius: 50%; /* Make it circular */
+     display: grid; /* Allows centering content */
+     place-items: center;
+     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+ }
+ 
+ .social-media-container a::before {
+     content: attr(data-social);
+     position: absolute;
+     background-color: var(--accent-color);
+     color: white;
+     text-decoration: none;
+     padding: 0.5em 1em;
+     border-radius: 100px;
+     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+     transform: translateY(-34px) rotate(25deg);
+     opacity: 0;
+     transition: 200ms ease;
+ }
+ 
+ .social-media-container a:hover {
+     background-color: var(--accent-color);
+     fill: whitesmoke;
+ }
+ 
+ .social-media-container a::after {
+     content: '';
+     position: absolute;
+     height: 0;
+     width: 0;
+     border-left: 8px solid transparent;
+     border-right: 8px solid transparent;
+     border-top: 10px solid var(--accent-color);
+     transform: translateY(0) rotate(25deg);
+     opacity: 0;
+     transition: 200ms ease;
+ }
+ .social-media-container a:hover::before {
+     transform: translateY(-65px) rotate(0);
+     opacity: 1;
+     font-family: 'Courier New', Courier, monospace;
+     font-size: 1.2rem;
+     font-weight: bold;
+     box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+ }
+ 
+ .social-media-container a:hover::after {
+     transform: translateY(-43px) rotate(0);
+     opacity: 1;
+     
+ }
