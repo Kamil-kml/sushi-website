@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap');
 
 body {
-    margin: 0;
+    margin: 0 0 4em;
     padding: 0;
     background: #f7eee5;
+    transition: background-color 0.5s ease, color 0.5s ease;
 }
 
 .nav-container {
@@ -40,6 +41,12 @@ body {
     display:block;
 }
 
+.navbar a.active-underline {
+    text-decoration-thickness: 3px;
+    text-underline-offset: .5em;
+    color: #861c1c;
+}
+
 .nav-logo {
     display: flex;
     justify-content: center;
@@ -50,9 +57,9 @@ body {
     gap: 2em;
 }
 
-.nav-logo span{
-    color: #333;
+.nav-logo span {
     font-size: 2.5rem;
+    color: #333;    
     text-shadow: 2px 3px 3px #cdffcdcb,
             3px 6px 6px #cdffcdcb,
         4px 7px 3px #333;
@@ -81,8 +88,10 @@ body {
     font-family: 'Nunito';
     font-size: 2rem;
     color: aquamarine;
+    text-align: center;
+    padding: 0 2em;
     text-shadow: 2px 2px 3px black,
-                    2px 2px 6px black
+                    2px 2px 6px rgb(255, 106, 106)
     ;
 }
 
@@ -94,9 +103,11 @@ body {
 .menu-elements {
     margin: 6em 5em;
     width: 400px;
+    display: flex;
+    flex-direction: column;
+    /*background-color: #333;*/
     padding: 2em;
-    align-content: center;
-    justify-self: center;
+    align-content: flex-start;
     gap: 3.3em;
 }
 
@@ -123,8 +134,12 @@ body {
         font-size: 2rem; /* Adjust font size for smaller screens */
     }
 
+    nav.nav-container {
+        margin-top: 2em;
+    }
+
     .background-elements h2 {
-        font-size: 1.3rem;
+        font-size: 1.6rem;
         text-align: center;
     }
 

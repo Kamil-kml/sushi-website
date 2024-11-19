@@ -1,0 +1,63 @@
+
+/* Dark mode */
+body.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+body.dark-mode .navbar {
+    background-color: #4b4747;
+}
+
+body.dark-mode .navbar a {
+    color: antiquewhite;
+}
+
+body.dark-mode .navbar a.active-underline {
+    color: #ff9d9d;
+}
+
+body.dark-mode .logo {
+    background: radial-gradient(circle, rgba(255, 229, 229, .8) 10%,
+     rgba(255, 229, 229, 0.5) 20%,
+      rgba(255, 229, 229, .36) 30%,
+       rgba(255, 229, 229, .23) 40%,
+        rgba(255, 229, 229, .16) 50%,
+         rgba(255, 229, 229, .1) 60%,
+          rgba(255, 229, 229, .06) 70%,
+           rgba(255, 229, 229, .03) 80%,
+            rgba(255, 229, 229, .023) 90%,
+             rgba(255, 229, 229, .016) 100%);
+    border-radius: 50%;
+    z-index: -1;
+    box-shadow: 0 0 20px 10px rgba(255, 157, 157, 0.09);
+}
+
+body.dark-mode .nav-logo span {
+    color: #cdffcdcb;    
+    text-shadow: 2px 3px 3px #333,
+            3px 6px 6px #333,
+        4px 7px 3px #cdffcdcb;
+}
+
+nav ul button.dark-mode-btn {
+    border-radius: 50%;
+    box-shadow: none;
+    background: rgb(85, 71, 71);
+    color: wheat;
+    font-size: 3rem;
+    width:fit-content;
+    height: fit-content;
+}
+
+body.dark-mode .phone-text {
+    color: #cdffcdcb;
+    text-shadow: 2px 2px 3px #333,
+            3px 3px 6px #333,
+        3px 3px 3px #cdffcdcb;
+}
+
+body.dark-mode .phone-link:hover .phone-icon {
+    font-size: 40px; /* Change icon size on hover */
+    color: rgb(0, 255, 170);
+}
