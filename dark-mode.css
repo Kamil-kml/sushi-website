@@ -2,7 +2,7 @@
 /* Dark mode */
 body.dark-mode {
     background-color: #121212;
-    color: white;
+    color: antiquewhite;
 }
 
 body.dark-mode .navbar {
@@ -38,16 +38,6 @@ body.dark-mode .nav-logo span {
     text-shadow: 2px 3px 3px #333,
             3px 6px 6px #333,
         4px 7px 3px #cdffcdcb;
-}
-
-nav ul button.dark-mode-btn {
-    border-radius: 50%;
-    box-shadow: none;
-    background: rgb(85, 71, 71);
-    color: wheat;
-    font-size: 3rem;
-    width:fit-content;
-    height: fit-content;
 }
 
 body.dark-mode .phone-text {
