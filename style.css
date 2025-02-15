@@ -146,6 +146,7 @@ body {
 
     .nav-logo img.logo {
         width: 150px; /* Resize logo for smaller screens */
+        border-radius: 0;
     }
 
     .nav-logo span {
