@@ -69,7 +69,6 @@ body {
 
 .logo {
     width: 200px;
-    border-radius: 0;
     /*position: absolute;
     z-index: 1;
     top: 15%;
@@ -147,7 +146,6 @@ body {
 
     .nav-logo img.logo {
         width: 150px; /* Resize logo for smaller screens */
-        border-radius: 0;
     }
 
     .nav-logo span {
